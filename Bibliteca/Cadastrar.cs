@@ -63,5 +63,10 @@ namespace Bibliteca
         {
 
         }//fim do campo endereço
+
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }//fim da classe
 }//fim do projeto

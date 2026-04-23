@@ -42,3 +42,5 @@ C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.Prop
 C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.csproj.GenerateResource.cache
 C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.Cadastrar.resources
 C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.Consultar.resources
+C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.Atualizar.resources
+C:\Users\allan.ssilva4\source\repos\Bibliteca\Bibliteca\obj\Debug\Bibliteca.Excluir.resources

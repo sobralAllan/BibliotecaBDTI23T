@@ -27,7 +27,6 @@ namespace Bibliteca
             try
             {
                 this.conexao.Open();//Abrir a conexão
-                MessageBox.Show("Conectado com sucesso!");
             }
             catch(Exception erro)
             {
@@ -126,6 +125,51 @@ namespace Bibliteca
             }//fim do for
             return "Código informado não existe!";
         }//fim do método consultarTudo
+
+        public string ConsultarNome(int codigo)
+        {
+            PreencherVetor();//Preencher todos os dados do vetor
+   
+            for (i = 0; i < this.contar; i++)
+            {
+                if (this.codigo[i] == codigo)
+                {
+                    return this.nome[i];
+                }//fim do if              
+            }//fim do for
+            return "Código informado não existe!";
+        }//fim do método consultarTudo
+
+        public string ConsultarGenero(int codigo)
+        {
+            PreencherVetor();//Preencher todos os dados do vetor
+
+            for (i = 0; i < this.contar; i++)
+            {
+                if (this.codigo[i] == codigo)
+                {
+                    return this.genero[i];
+                }//fim do if              
+            }//fim do for
+            return "Código informado não existe!";
+        }//fim do método consultarTudo
+
+
+        public string ConsultarEndereco(int codigo)
+        {
+            PreencherVetor();//Preencher todos os dados do vetor
+
+            for (i = 0; i < this.contar; i++)
+            {
+                if (this.codigo[i] == codigo)
+                {
+                    return this.endereco[i];
+                }//fim do if              
+            }//fim do for
+            return "Código informado não existe!";
+        }//fim do método consultarTudo
+
+
 
         public string Atualizar(int codigo, string campo, string novoDado)
         {

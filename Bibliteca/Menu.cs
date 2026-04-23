@@ -14,6 +14,8 @@ namespace Bibliteca
     {
         Cadastrar cad;
         Consultar con;
+        Atualizar atu;
+        Excluir exc;
         public Menu()
         {
             InitializeComponent();
@@ -30,5 +32,17 @@ namespace Bibliteca
             con = new Consultar();
             con.ShowDialog();
         }//Botão Consultar
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            atu = new Atualizar();
+            atu.ShowDialog();
+        }//fim do botão atualizar
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            exc = new Excluir();
+            exc.ShowDialog();
+        }//fim do botão excluir
     }//Classe Menu
 }//Projeto Biblioteca

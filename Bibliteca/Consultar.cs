@@ -14,8 +14,10 @@ namespace Bibliteca
     {
         DAOAutor dao;
         public Consultar()
-        { 
+        {
+            InitializeComponent();
             this.dao = new DAOAutor();
+            
             ChamarMetodo(dataGridView1);//Configurar toda a estrutura
         }//fim do construtor consultar
 
@@ -25,12 +27,12 @@ namespace Bibliteca
         }
 
         //Chamar Método
-        public void ChamarMetodo(DataGridView dataGrid)
+        public void ChamarMetodo(DataGridView datagrid)
         {
-            InitializeComponent();
-            ConfigurarDataGrid(dataGrid);//Configuro a estrutura
-            NomeColunas(dataGrid);//Configuro os nomes
-            AdicionarDados(dataGrid);//Adiciono os dados
+            
+            ConfigurarDataGrid(datagrid);//Configuro a estrutura
+            NomeColunas(datagrid);//Configuro os nomes
+            AdicionarDados(datagrid);//Adiciono os dados
         }//fim do método
 
         //Nome Colunas
@@ -63,6 +65,10 @@ namespace Bibliteca
             }//fim do for
         }//fim do adicionarDados
 
+        public DataGridView retornarData()
+        {
+            return dataGridView1;
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
